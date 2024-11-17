@@ -2,8 +2,8 @@ import self from "../img/self.png"
 import mock1 from "../img/mock1.png"
 import mock2 from "../img/mock2.png"
 import mock3 from "../img/mock3.png"
-import mock4 from "../img/mock4.png"
-import mock5 from "../img/mock5.png"
+
+
 
 /* Hi there! Thanks for checking out my portfolio template. Be sure to read the comments to get a better understanding of
 how to make this template work best for you! */
@@ -18,7 +18,7 @@ the site.
 /* 
 This variable will change the layout of the website from multipage to single, scrollable page
 */
-export let singlePage = false;
+export let singlePage = true;
 
 /*
 So let's get started! Some of the info below is pretty self-explanatory, like 'firstName' and 'bio'. I'll try to explain anything
@@ -27,10 +27,10 @@ of what each of the values mean.
  */
 
 export const info = {
-    firstName: "John",
-    lastName: "Smith",
+    firstName: "Matt",
+    lastName: "Atkins",
     initials: "js", // the example uses first and last, but feel free to use three or more if you like.
-    position: "a Full Stack Developer",
+    position: "an Entrepreneur and Full Stack Software Engineer",
     selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
     gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
     baseColor: colors[0],
@@ -41,40 +41,31 @@ export const info = {
         },
         {
             emoji: '🌎',
-            text: 'based in the US'
+            text: 'based in Colorado, USA'
         },
         {
             emoji: "💼",
-            text: "Systems Engineer at Google"
+            text: "Founder at PitchPortPro"
         },
         {
             emoji: "📧",
-            text: "johnsmith@gmail.com"
+            text: "matt.atkins216@gmail.com"
         }
     ],
     socials: [
+      
         {
-            link: "https://facebook.com",
-            icon: 'fa fa-facebook',
-            label: 'facebook'
-        },
-        {
-            link: "https://instagram.com",
-            icon: 'fa fa-instagram',
-            label: 'instagram'
-        },
-        {
-            link: "https://github.com",
+            link: "https://github.com/matkins216",
             icon: "fa fa-github",
             label: 'github'
         },
         {
-            link: "https://linkedin.com",
+            link: "https://linkedin.com/in/matthewatkins216",
             icon: "fa fa-linkedin",
             label: 'linkedin'
         },
         {
-            link: "https://twitter.com",
+            link: "https://x.com/MattTheDev",
             icon: "fa fa-twitter",
             label: 'twitter'
         }
@@ -82,25 +73,25 @@ export const info = {
 // Just change the links so that they lead to your social profiles.
 
     ],
-    bio: "Hello! I'm John. I'm a systems engineer for Google. I studied CompSci at Harvard, I enjoy long walks on the beach, and I believe artificial intelligence will inevitably rule us all one day. You should hire me!",
+    bio: "Hello! I'm Matt. I'm a full stack developer and entrepreneur. I studied Marketing at Carthage College and went through General Assembly's Full Stack Software Engineering Immersive. My experience in marketing and sales allows me to write code that has business purpose behind every line.",
     skills:
         {
-            proficientWith: ['javascript', 'react', 'git', 'github', 'bootstrap', 'html5', 'css3', 'figma'],
-            exposedTo: ['nodejs', 'python', 'adobe illustrator']
+            proficientWith: ['javascript', 'react', 'git', 'github', 'tailwindCSS', 'html5', 'css3', 'python', 'nodejs', 'postgreSQL', 'django', 'express', 'flask', 'mongodb', 'wordpress'],
+            exposedTo: ['figma']
         }
     ,
     hobbies: [
         {
-            label: 'reading',
+            label: 'learning',
             emoji: '📖'
         },
         {
-            label: 'theater',
-            emoji: '🎭'
+            label: 'muay thai',
+            emoji: '🥊'
         },
         {
-            label: 'movies',
-            emoji: '🎥'
+            label: 'golf',
+            emoji: '⛳'
         },
         {
             label: 'cooking',
@@ -111,34 +102,23 @@ export const info = {
     ],
     portfolio: [ // This is where your portfolio projects will be detailed
         {
-            title: "Project 1",
-            live: "https://paytonpierce.dev", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
-            source: "https://github.com/paytonjewell", // this should be a link to the **repository** of the project, where the code is hosted.
+            title: "StylBerry (Private Git)",
+            live: "https://stylberry.com", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+            source: "https://github.com/matkins216", // this should be a link to the **repository** of the project, where the code is hosted.
             image: mock1
         },
         {
-            title: "Project 2",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
+            title: "PitchPortPro (Private Git)",
+            live: "https://pitchportpro.com",
+            source: "https://github.com/matkins216",
             image: mock2
         },
         {
-            title: "Project 3",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
+            title: "Redux Remodeling Website",
+            live: "https://reduxremodeling.com",
+            source: "https://github.com/matkins216/StylBerry-ReduxRemodeling",
             image: mock3
         },
-        {
-            title: "Project 4",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: mock4
-        },
-        {
-            title: "Project 5",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: mock5
-        }
+      
     ]
 }
